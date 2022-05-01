@@ -6,7 +6,7 @@ This Pulumi stack provisions a low-budget Kubernetes private cluster on Google C
 
 Try the one-click deployment, just bear in mind that one will need to [setup a Google Cloud service account](https://www.pulumi.com/registry/packages/gcp/service-account/) and use it authorize the Pulumi Cloud platform to interact with it:
 
-[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/vniche/low-budget-gke)
+[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/vniche/low-budget-k8s)
 
 PS.: For environments that need thorough security practices, a tightly configure permissions for the service account is necessary, if but if not, the default compute engine service account every project has by default will do just fine.
 
