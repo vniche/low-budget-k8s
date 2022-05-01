@@ -1,6 +1,6 @@
 name: low-budget-k8s
 runtime: go
-description: ulumi stack to provision a low-budget Kubernetes cluster on Google Cloud
+description: Pulumi stack to provision a low-budget Kubernetes cluster on Google Cloud
 template:
   config:
     google-native:project:
