@@ -1,0 +1,28 @@
+name: low-budget-k8s
+runtime: go
+description: ulumi stack to provision a low-budget Kubernetes cluster on Google Cloud
+template:
+  config:
+    google-native:project:
+      description: The Google Cloud project ID to deploy to
+    google-native:region:
+      description: The Google Cloud region to deploy to
+      default: us-central1
+    google-native:zone:
+      description: The Google Cloud zone to deploy to
+      default: us-central1-a
+    low-budget-k8s:cluster-name:
+      description: The Kubernetes cluster name
+      default: my-first-cluster
+    low-budget-k8s:nodes-cidr:
+      description: The IP range reserved for cluster nodes
+      default: 10.0.0.0/24
+    low-budget-k8s:pods-cidr:
+      description: The IP range reserved for cluster pods
+      default: 10.0.4.0/22
+    low-budget-k8s:services-cidr:
+      description: The IP range reserved for cluster services
+      default: 10.0.8.0/23
+    low-budget-k8s:max-pods-per-node:
+      description:  The cluster per node max pods
+      default: 20
